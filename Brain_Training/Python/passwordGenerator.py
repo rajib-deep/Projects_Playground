@@ -21,7 +21,3 @@ def passSugg1():
 
 # print("We have a new password suggestion for you: ",end='')
 # passSugg1() #easy one
-# print(__name__)
-if __name__=='__main__':
-    print("Testing here.. ")
-
