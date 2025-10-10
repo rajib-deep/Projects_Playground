@@ -2,8 +2,9 @@ import requests
 import json
 def newsupdate():
     # url= "https://www.google.com"
+    apikey="your api key"
     query= input("What type of news you are interested in: ")
-    url = f"https://newsdata.io/api/1/latest?apikey=pub_072640b42b09427f8bf8130b69b1087f&q={query}"
+    url = f"https://newsdata.io/api/1/latest?apikey={apikey}&q={query}"
     r = requests.get(url)
     news = json.loads(r.text)
     print(news,type(news))
@@ -17,7 +18,7 @@ def newsupdate():
         print("-------------------------------------------")
 
 def weatherupdate():
-    weatherapikey='4572f8cea58e0ac000da9509d9620f40'
+    weatherapikey='your api key'
     city= input("Please insert your city name: ")
     # state = input("Please insert your state name: ")
     country = input("Please insert your country name: ")
