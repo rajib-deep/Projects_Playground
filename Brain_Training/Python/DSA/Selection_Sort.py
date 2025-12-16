@@ -12,7 +12,7 @@ def without_swap(arry):
         arry.insert(i,min_value)
         print(f"Array in step {i}:{arry}")
 
-    print(f"Sorted Array:{arry}")
+    print(f"Sorted Array (Selection sort):{arry}")
 
 def with_swap(arry):
     n=len(arry)
@@ -25,9 +25,9 @@ def with_swap(arry):
         arry[i],arry[min_val_at_index]=arry[min_val_at_index],arry[i]
         print(f"Array in step {i}:{arry}")
 
-    print(f"Sorted Array:{arry}")
+    print(f"Sorted Array (Selection sort):{arry}")
 
 arry = [12,15,3,45,87,2,75,95,13]
 print(f"Array:{arry}")
 # without_swap(arry)
-without_swap(arry)
+with_swap(arry)
