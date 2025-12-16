@@ -15,4 +15,5 @@ public class SearchOP {
         System.out.println("Lowest value of the array is:"+smallest );
         System.out.println("Position of lowest value is:"+position);
     }
+
 }
