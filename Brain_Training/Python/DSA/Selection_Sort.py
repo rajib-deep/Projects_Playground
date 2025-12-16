@@ -21,7 +21,7 @@ def with_swap(arry):
         for j in range(i+1,n):
             if arry[j] < arry[min_val_at_index]: # use > to sort in descending order
                 min_val_at_index = j
-
+        # we are reducing extra swapping by 1 index from minimum index by swapping the values directly
         arry[i],arry[min_val_at_index]=arry[min_val_at_index],arry[i]
         print(f"Array in step {i}:{arry}")
 
